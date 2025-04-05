@@ -1,3 +1,5 @@
+// TODO: make a form which will post a new post as an action
+
 export default function CreatePostPage() {
   return (
     <main>
