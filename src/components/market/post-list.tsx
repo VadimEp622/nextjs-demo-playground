@@ -1,8 +1,8 @@
-import { fetchPosts } from "../../lib/actions";
+import { fetchDemoPosts } from "../../lib/demo-actions";
 import PostCard from "../../ui/post-card";
 
 export default async function PostList() {
-  const posts = await fetchPosts();
+  const posts = await fetchDemoPosts();
 
   return (
     <section className="px-6">
