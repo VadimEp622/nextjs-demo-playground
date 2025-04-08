@@ -15,7 +15,7 @@ datasource db {
 }
 
 model Post {
-  id        String   @id @default(uuid())
+  id        String   @id @default(cuid())
   title     String
   body      String
   createdAt DateTime @default(now())
