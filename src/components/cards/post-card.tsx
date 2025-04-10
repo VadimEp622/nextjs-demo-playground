@@ -1,6 +1,9 @@
 import { IPost } from "../../lib/model/post";
 import { DeletePost } from "../ui/posts/buttons";
 
+// TODO: add click on card to redirect to posts/[id] page
+// TODO: add post edit
+
 export default function PostCard({ post }: Readonly<{ post: IPost }>) {
   return (
     <article className="w-full rounded-lg sm:w-50 p-5">
