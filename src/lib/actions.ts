@@ -74,6 +74,7 @@ export async function createPost(
 
 export async function deletePost(id: string) {
   try {
+    // TODO: add some sort of notification to the user (floating limited modal) if success/error
     await prisma.post.delete({ where: { id } });
   } catch (error) {
     console.error("Error deleing post:", error);
