@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import PostList from "../../components/market/post-list";
+import PostList from "../../components/lists/post-list";
 
 export default function Home() {
   return (

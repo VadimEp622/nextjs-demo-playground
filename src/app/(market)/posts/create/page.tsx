@@ -1,6 +1,6 @@
 // TODO: make a form which will post a new post as an action
 
-import FormCreatePost from "../../../../components/market/form-create-post";
+import FormCreatePost from "../../../../components/forms/form-create-post";
 
 export default function CreatePostPage() {
   return (

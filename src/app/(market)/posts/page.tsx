@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import PostList from "../../../components/market/post-list";
+import PostList from "../../../components/lists/post-list";
 import Link from "next/link";
 
 // forces the page to NOT be static in production (useful for async data?)  - topic is regarding "next.js caching + static and dynamic rendering"

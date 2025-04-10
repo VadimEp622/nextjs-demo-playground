@@ -1,8 +1,8 @@
 "use client";
 
 import { useActionState } from "react";
-import { Button } from "../../ui/button";
 import { createPost, IPostFormActionState } from "../../lib/actions";
+import { Button } from "../ui/button";
 
 export default function FormCreatePost() {
   const initialState: IPostFormActionState = { message: null, errors: {} };

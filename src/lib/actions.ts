@@ -5,7 +5,7 @@ import { z } from "zod";
 import { redirect } from "next/navigation";
 import prisma from "./db";
 
-// TODO: add create post page, which will have an action of creating new post in postgres DB
+// TODO: add delete post
 
 const postFormSchema = z.object({
   title: z.string({
@@ -28,11 +28,6 @@ export async function fetchPosts() {
   try {
     const posts = await prisma.post.findMany();
     return posts;
-
-    // ---- OLD CODE ----
-    //   await new Promise((resolve) => setTimeout(resolve, 500));
-    //   const fetchedPosts = posts;
-    //   return fetchedPosts;
   } catch (error) {
     // Handle any errors
     console.error("Error fetching posts:", error);
@@ -75,4 +70,13 @@ export async function createPost(
 
   revalidatePath("/posts");
   redirect("/posts");
+}
+
+export async function deletePost(id: string) {
+  try {
+    await prisma.post.delete({ where: { id } });
+  } catch (error) {
+    console.error("Error deleing post:", error);
+  }
+  revalidatePath("/posts");
 }

@@ -1,5 +1,5 @@
-import MarketFooter from "../../components/market/footer";
-import MarketHeader from "../../components/market/header";
+import MarketFooter from "../../components/shared/footer";
+import MarketHeader from "../../components/shared/header";
 
 export default function MarketLayout({
   children,
