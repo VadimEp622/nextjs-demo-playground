@@ -3,7 +3,7 @@
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
 import { redirect } from "next/navigation";
-import prisma from "./db";
+import prisma from "../db";
 
 // TODO: add delete post
 

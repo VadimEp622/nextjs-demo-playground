@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 // TODO: Using Tailwind, research centering the page in a grid of 3 columns, where the page is in the center column, and the side columns have their own size.
 //       It should dynamically allow stretching chosen content from the page to fill the whole 3 grid columns, from any page in the app.
-//       ** Hint #1: Make a max-width class for the main content, and give this class to each building-block cmp of the page. 
+//       ** Hint #1: Make a max-width class for the main content, and give this class to each building-block cmp of the page.
 //                  This will allow giving a certain cmp in the middle of the page a full horizontal width (call it ".p-wrapper")
 
 // TODO: add database and deploy to Vercel

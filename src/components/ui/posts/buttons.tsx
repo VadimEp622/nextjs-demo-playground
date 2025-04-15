@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { deletePost } from "../../../lib/actions";
+import { deletePost } from "../../../lib/actions/posts";
 
 export function DeletePost({ postId }: Readonly<{ postId: string }>) {
   const deletePostWithId = deletePost.bind(null, postId);

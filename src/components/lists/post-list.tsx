@@ -1,5 +1,5 @@
-import { fetchPosts } from "../../lib/actions";
-import PostCard from "../cards/post-card";
+import PostCard from "@/components/cards/post-card";
+import { fetchPosts } from "@/lib/actions/posts";
 
 export default async function PostList() {
   const posts = await fetchPosts();

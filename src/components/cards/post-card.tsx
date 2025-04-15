@@ -1,5 +1,5 @@
-import { IPost } from "../../lib/model/post";
-import { DeletePost } from "../ui/posts/buttons";
+import { DeletePost } from "@/components/ui/posts/buttons";
+import { IPost } from "@/lib/model/post";
 
 // TODO: add click on card to redirect to posts/[id] page
 // TODO: add post edit

@@ -10,6 +10,7 @@ export default function MarketHeader() {
             <section className="flex gap-2">
               <Link href="/">Home</Link>
               <Link href="/posts">Posts</Link>
+              <Link href="/login">Login</Link>
             </section>
           </li>
         </ul>
