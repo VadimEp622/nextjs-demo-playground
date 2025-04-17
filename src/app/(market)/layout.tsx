@@ -14,7 +14,6 @@ export default function MarketLayout({
       <div className="flex-grow">{children}</div>
       <MarketFooter />
       {modal}
-      <div id="modal-root" />
     </div>
   );
 }
