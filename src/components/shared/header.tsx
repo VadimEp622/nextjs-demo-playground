@@ -1,19 +1,27 @@
+import { auth } from "@/auth";
 import Link from "next/link";
 
-export default function MarketHeader() {
+export default async function MarketHeader() {
+  const session = await auth();
+
   return (
-    <header className="text-center px-6 py-3 border-b-1 border-gray-500">
-      <div className="flex gap-4 justify-between">
+    <header className="border-b-1 border-gray-500 px-6 py-3 text-center">
+      <div className="flex justify-between gap-4">
         <h2>Fancy Logo</h2>
-        <ul>
-          <li>
-            <section className="flex gap-2">
+        {session?.user?.name && <h4>Hello, {session.user.name}</h4>}
+        <nav>
+          <ul className="flex gap-2">
+            <li>
               <Link href="/">Home</Link>
+            </li>
+            <li>
               <Link href="/posts">Posts</Link>
+            </li>
+            <li>
               <Link href="/login">Login</Link>
-            </section>
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
