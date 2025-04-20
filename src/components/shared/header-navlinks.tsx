@@ -16,18 +16,16 @@ const navLinks = [
     name: "About",
     href: "/about",
   },
-  {
-    name: "Login",
-    href: "/login",
-  },
 ];
 
-export default function HeaderNavlinks() {
+export default function HeaderNavlinks({
+  className,
+}: Readonly<{ className?: string }>) {
   const pathname = usePathname();
-  console.log("pathname", pathname);
+  // console.log("pathname", pathname);
 
   return (
-    <nav>
+    <nav className={className}>
       <ul className="flex gap-2">
         {navLinks.map((link) => {
           // checks if current mapped link is for "/" homepage or not.
