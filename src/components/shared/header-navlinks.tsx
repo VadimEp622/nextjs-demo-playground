@@ -13,6 +13,10 @@ const navLinks = [
     href: "/posts",
   },
   {
+    name: "About",
+    href: "/about",
+  },
+  {
     name: "Login",
     href: "/login",
   },
